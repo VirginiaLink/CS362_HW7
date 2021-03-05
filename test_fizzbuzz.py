@@ -6,6 +6,7 @@ import unittest
 import io
 import sys
 
+import fizzbuzz
 
 class Test(unittest.TestCase):
 
@@ -27,7 +28,6 @@ class Test(unittest.TestCase):
         fizzbuzz.fb()
         sys.stdout = sys.__stdout__
         self.assertNotIn('15', capturedOutput)
-
 
 
 
