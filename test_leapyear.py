@@ -9,9 +9,9 @@ class Test(unittest.TestCase):
     def test_easy1(self):
         self.assertTrue(calc(4))
     def test_easy2(self):
-        self.assertTrue(calc(5))
+        self.assertFalse(calc(5))
     def test_hard1(self):
-        self.assertTrue(calc(1700))
+        self.assertFalse(calc(1700))
     def test_hard2(self):
         self.assertTrue(calc(2012))
 
